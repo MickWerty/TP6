@@ -28,6 +28,16 @@ public final class VideoTape implements Article{
 		return o instanceof VideoTape videoTape
 		&& name.equals(videoTape.name) && duration.equals(videoTape.duration);
 	}
+	
+	public String toSting() {
+		var string = new StringBuilder();
+		string.append("VideoTape:");
+		string.append(name);
+		string.append(":");
+		string.append(duration.toMinutes());
+		return string.toString();
+	}
+	
 	public String toText() {
 		var string = new StringBuilder();
 		string.append("VideoTape:");

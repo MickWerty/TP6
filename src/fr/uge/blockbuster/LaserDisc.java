@@ -28,6 +28,13 @@ public final class LaserDisc implements Article{
 		&& name.equals(laserDisC.name);
 	}
 	
+	public String ToString() {
+		var string = new StringBuilder();
+		string.append("LaserDisc:");
+		string.append(name);
+		return string.toString();
+	}
+	
 	public String toText() {
 		var string = new StringBuilder();
 		string.append("LaserDisc:");
